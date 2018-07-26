@@ -26,7 +26,7 @@ public class UppercatApplication {
 				this.log.info("resource : " + resource.exists() + " and " + resource.getURI().toString());
 				this.bytes = StreamUtils.copyToByteArray(resource.getInputStream());
 
-				this.result.put("cat", new String(Base64.getEncoder().encode(bytes)));
+//				this.result.put("cat", new String(Base64.getEncoder().encode(bytes)));
 				this.result.put("key", "value");
 		}
 
